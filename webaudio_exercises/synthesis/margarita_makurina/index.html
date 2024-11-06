@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Stream Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    .control { margin: 20px; }
+    label { font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>Audio Stream Generator</h1>
+
+  <div class="control">
+    <label for="frequency">Frequency (Hz):</label>
+    <input type="range" id="frequency" min="20" max="2000" value="440">
+    <span id="freqValue">440 Hz</span>
+  </div>
+
+  <div class="control">
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+    <span id="volValue">0.5</span>
+  </div>
+
+  <button id="startButton">Start</button>
+  <button id="stopButton" disabled>Stop</button>
+
+  <script src="audioGenerator.js"></script>
+</body>
+</html>
